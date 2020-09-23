@@ -1,0 +1,41 @@
+<h3 class="box-title m-b-20">User List</h3>
+                        
+
+				<div class="table-responsive">
+				
+					<table id="demo-foo-addrow" class="table m-t-20 table-hover no-wrap contact-list" data-page-size="10">
+						<thead>
+							<tr> 
+								<th >S.NO</th>
+								<th>User Name</th>
+								<th>Email</th>
+								<th>Address</th>
+								<th>Status</th>
+								<!-- <th>Status</th> -->
+								<th></th>
+							</tr>
+						</thead>
+						<tbody>
+						  <tr *ngFor="let x of userlistdata; index as i">
+						  <td>{{i+1}}</td>
+							<td>{{x.U_NAME}}</td>
+							<td>{{x.U_EMAIL}}</td>
+							<td>{{x.U_ADDRESS}}</td>
+							<td>{{x.U_ACTIVE}}</td>
+							<!-- <td><input type="text" class="form-control" [(ngModel)]="x.U_ACTIVE"></td> -->
+							<td><a class="text-inverse p-l-10" (click)="DeleteRow(x);" ><i class="fa fa-trash"></i></a></td>
+						  </tr>
+						  
+						</tbody>
+					</table>
+					
+				</div>
+	<div class="col-md-12">
+                                                            <!-- Form Group -->
+                                                            <div class="form-group">
+
+                                                                <button  (click)="EditSave(userlistdata)" class="btn btn-gfort">Save</button>
+																<button  (click)="LogOut()" class="btn btn-gfort">Log Out</button>
+
+                                                            </div><!-- /End Form Group -->
+                                                        </div>

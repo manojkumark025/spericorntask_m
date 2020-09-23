@@ -1,0 +1,70 @@
+<div class="card-body m-t-0 pt-0 pb-0">
+                    <form class="form-horizontal " id="loginform" >
+                        <h3 class="box-title m-b-20">Register</h3>
+                        
+                        
+                          <div class="col-md-12">
+                                                            <!-- Form Group -->
+                                                            <div class="form-group">
+
+                                                                <label >Name</label>
+                                                                <input type="text"  [(ngModel)]="Uname" class="form-control input"  [ngModelOptions]="{standalone: true}" maxlength="25">
+
+                                                            </div><!-- /End Form Group -->
+                                                        </div>
+														
+														<div class="col-md-12">
+                                                            <!-- Form Group -->
+                                                            <div class="form-group">
+
+                                                                <label >Email</label>
+                                                                <input type="email"  [(ngModel)]="Uemail" class="form-control input"  [ngModelOptions]="{standalone: true}" maxlength="25">
+
+                                                            </div><!-- /End Form Group -->
+                                                        </div>
+														
+														<div class="col-md-12">
+                                                            <!-- Form Group -->
+                                                            <div class="form-group">
+
+                                                                <label >Password</label>
+                                                                <input type="password"  [(ngModel)]="Upassword" class="form-control input"  [ngModelOptions]="{standalone: true}" maxlength="25">
+
+                                                            </div><!-- /End Form Group -->
+                                                        </div>
+														
+														<div class="col-md-12">
+                                                            <!-- Form Group -->
+                                                            <div class="form-group">
+
+                                                                <label >Confirm Password</label>
+                                                                <input type="password"  [(ngModel)]="UCpassword" class="form-control input"  [ngModelOptions]="{standalone: true}" maxlength="25">
+
+                                                            </div><!-- /End Form Group -->
+                                                        </div>
+														
+														<div class="col-md-12">
+                                                            <!-- Form Group -->
+                                                            <div class="form-group">
+
+                                                                <label >Address</label>
+                                                                <input type="text"  [(ngModel)]="Uaddress" class="form-control input"  [ngModelOptions]="{standalone: true}" maxlength="25">
+
+                                                            </div><!-- /End Form Group -->
+                                                        </div>
+                        
+                        
+                        <div class="form-group text-center">
+                            <div class="col-xs-12 p-b-0">
+                                <button class="btn btn-block btn-lg btn-info " type="submit" (click)="NewRegister();">Register</button>
+                            </div>
+                        </div>
+                        <div class="form-group m-t-0">
+                            <div class="col-sm-12 text-center">
+                                Already have an account? <a (click)="GotoLogin();" class="text-info m-l-5"><b>Sign In</b></a>
+                            </div>
+                        </div>
+                        
+                    </form>
+                    
+                </div>
